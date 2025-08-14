@@ -58,4 +58,16 @@ html, body, #root {
     .heading {
         font-size: 1.5rem; /* smaller for small screens */
     }
+    .paragraph {
+        width: 80%;
+    }
+    .imageSection {
+        width: 80%;
+    }
+}
+
+@media (max-width: 380px) {
+    .image {
+        width: 80%;
+    }
 }
