@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3rem 2rem;
+  background-color: #fff;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 !important;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
+.textSection {
+  width: 50%;
+  flex: 1;
+}
+
+.heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #111;
+  line-height: 1.2;
+  font-family: 'Poppins', sans-serif;
+  word-break: keep-all;
+  padding-left: 20%;
+}
+
+.subText {
+  margin-top: 1rem;
+  color: #555;
+  font-size: 1.3rem;
+  padding-left: 21%;
+}
+
+.buttonGroup {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.btnPrimary {
+  background-color: #ff7a00;
+  color: #fff;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btnPrimary:hover {
+  background-color: #e96e00;
+}
+
+.btnOutline {
+  background: transparent;
+  color: #ff7a00;
+  border: 2px solid #ccc;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btnOutline:hover {
+  background-color: #fff7f0;
+  border-color: #ff7a00;
+}
+
+.imageSection {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+
+@media (min-width: 768px) {
+  .imageSection {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .testSection {
+    padding: 0;
+  }
+}
+
+.heroImage {
+  width: 550px;
+  height: 100%;
+  max-width: 100%;
+  padding-bottom: 2rem;
+}
