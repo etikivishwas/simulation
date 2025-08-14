@@ -22,6 +22,8 @@ html, body, #root {
 .heading {
     white-space: nowrap;
     font-size: 2rem;
+    padding: 0;
+    margin-bottom: 0;
 }
 
 .image {
@@ -38,7 +40,7 @@ html, body, #root {
 
 .paragraph {
     width: 70%;
-    padding: 2rem 2rem;
+    padding: 0rem 2rem;
 }
 
 .para {
@@ -51,7 +53,7 @@ html, body, #root {
 
 @media (max-width: 768px) {
     .header {
-        width: 100%;
+        width: 90%;
         margin-left: 20px;
         justify-content: center; /* center align on mobile */
     }
