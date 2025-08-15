@@ -1,3 +1,7 @@
+body {
+  font-family: 'Geist mono', monospace;
+}
+
 .container {
   display: flex;
   justify-content: center;

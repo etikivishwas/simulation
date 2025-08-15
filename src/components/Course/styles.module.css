@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'poppins', sans-serif;
+    font-family: 'Geist mono', monospace;
 }
 
 .container {
@@ -55,7 +55,7 @@ body {
 .para1 {
     padding: 1rem 1rem;
     border-radius: 25px;
-    font-family: 'roboto' sans-serif;
+    line-height: 140%;
     background-color: #fff;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -69,7 +69,6 @@ body {
 .para2 {
     font-size: 1.5rem;
     font-weight: 600;
-    font-family: 'roboto' sans-serif;
 }
 
 .imageSection {

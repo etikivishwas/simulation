@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
 
 .container {
   display: flex;
@@ -8,6 +8,7 @@
   padding: 3rem 2rem;
   background-color: #fff;
   gap: 2rem;
+  font-family: 'Geist mono', monospace;
 }
 
 @media (min-width: 768px) {
@@ -27,7 +28,7 @@
 
 .textSection {
   width: 50%;
-  flex: 1;
+  
 }
 
 .heading {
@@ -35,7 +36,7 @@
   font-weight: bold;
   color: #111;
   line-height: 1.2;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Geist mono', monospace;
   word-break: keep-all;
   padding-left: 20%;
 }
@@ -103,6 +104,17 @@
 @media (max-width: 768px) {
   .testSection {
     padding: 0;
+    flex: 0;
+  }
+  .heading {
+    padding-left: 0;
+  }
+  .subText {
+    padding-left: 0;
+  }
+  .heroImage {
+    width: 100%;
+    height: auto;
   }
 }
 

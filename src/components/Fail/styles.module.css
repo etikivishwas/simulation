@@ -6,7 +6,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: 'poppins', sans-serif;
+    font-family: 'Geist mono', monospace;
 }
 
 .content {
@@ -72,8 +72,8 @@
 @media (max-width: 768px) {
     .container {
         min-height: auto; /* Let content decide height on small screens */
-        padding: 2rem 0; 
-        margin-top: 10%;
+        padding: 0 0; 
+        margin-top: 5%;
     }
 
     .items {
