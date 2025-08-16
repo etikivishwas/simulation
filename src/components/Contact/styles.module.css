@@ -19,6 +19,10 @@
     width: 33%;
     height: 70vh;
     background-color: #c657e4;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .imageSec {
@@ -45,9 +49,8 @@
   justify-content: center;
   align-items: center;
   margin-right: 3rem;
-  background-color: #fff; /* So it's visible */
+  background-color: #fff; /* visible */
 }
-
 
 .form form {
   display: flex;
@@ -57,11 +60,28 @@
 }
 
 .form input,
-.form textarea,
 .form select {
   padding: 1rem;
   border: 1px solid #ccc;
   border-radius: 1rem;
+}
+
+/* Resume upload field */
+.uploadLabel {
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.fileInput {
+  margin-top: 0.5rem;
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  font-size: 0.9rem;
 }
 
 .form input[type="submit"] {
@@ -72,6 +92,10 @@
   background-color: var(--orange);
   border: none;
   cursor: pointer;
+}
+
+.form input[type="submit"]:hover {
+  background-color: #e56c00;
 }
 
 @media (max-width: 768px) {
@@ -88,6 +112,7 @@
     width: 100%;
     height: auto;
     padding-left: 4rem;
+    padding-top: 0;
   }
 
   .form input[type="submit"] {

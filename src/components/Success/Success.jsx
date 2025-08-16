@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import styles from './styles.module.css'
+import styles from './styles.module.css';
 
 function Success() {
   const [activeTab, setActiveTab] = useState("traditional");
@@ -19,8 +19,7 @@ function Success() {
         <div className={styles.header}>
           <h3>Interactive Skill Gap Assessment</h3>
           <p>
-            Compare traditional internship outcomes vs. corporate simulation
-            results
+            Compare traditional internship outcomes vs. corporate simulation results
           </p>
         </div>
 
@@ -28,13 +27,13 @@ function Success() {
         <div className={styles.tabs}>
           <button
             onClick={() => setActiveTab("traditional")}
-            className={activeTab === "traditional" ? styles.tab + " " + styles.active : styles.tab}
+            className={activeTab === "traditional" ? `${styles.tab} ${styles.active}` : styles.tab}
           >
             Traditional Internships
           </button>
           <button
             onClick={() => setActiveTab("corporate")}
-            className={activeTab === "corporate" ? "tab active" : "tab"}
+            className={activeTab === "corporate" ? `${styles.tab} ${styles.active}` : styles.tab}
           >
             Corporate Simulation
           </button>
@@ -45,12 +44,9 @@ function Success() {
           {skillGaps.map((item, index) => (
             <div key={index} className={styles.skillItem}>
               <div className={styles.skillHeader}>
-                <span>{item.skill}</span>
-                <span>
-                  {activeTab === "traditional"
-                    ? item.traditional
-                    : item.corporate}
-                  %
+                <span className={styles.skillName}>{item.skill}</span>
+                <span className={styles.skillPercent}>
+                  {activeTab === "traditional" ? item.traditional : item.corporate}%
                 </span>
               </div>
               <div className={styles.barBackground}>
@@ -82,3 +78,4 @@ function Success() {
 }
 
 export default Success;
+
