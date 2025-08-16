@@ -13,6 +13,7 @@ import Testimonials from './components/Testimonials/Testimonials';
 function App() {
   const contactRef = useRef(null);
   const aboutRef = useRef(null);
+  const courseRef = useRef(null);
 
   const scrollToContact = () => {
     contactRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -22,6 +23,9 @@ function App() {
     aboutRef.current?.scrollIntoView({ behavior: "smooth" });
   };
 
+  const scrollToCourse = () => {
+    courseRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
 
   return (
     <div className="App">
@@ -32,8 +36,11 @@ function App() {
         <About />
       </div>
       <Fail />
-      <Success />
-      <Course />
+      <Success onExploreMore={scrollToCourse} />
+      <div ref={courseRef}>
+        <Course />
+      </div>
+      
       <Testimonials />
       <div ref={contactRef}>
         <Contact />

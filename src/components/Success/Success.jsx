@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styles from './styles.module.css';
 
-function Success() {
+function Success({ onExploreMore }) {
   const [activeTab, setActiveTab] = useState("traditional");
 
   const skillGaps = [
@@ -70,7 +70,7 @@ function Success() {
         {/* Call to Action */}
         <div className={styles.cta}>
           <p>Ready to bridge the gap with real corporate experience?</p>
-          <button className={styles.ctaBtn}>Explore Programs →</button>
+          <button className={styles.ctaBtn} onClick={ onExploreMore }>Explore Programs →</button>
         </div>
       </div>
     </div>

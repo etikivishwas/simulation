@@ -6,7 +6,7 @@ const testimonials = [
   {
     name: "Ron Segall",
     role: "Flux Academy",
-    text: "I’ve just completed this course – and it’s really great! In this course you’ll learn exactly how to write every single piece of copy on your website in just 7 days.",
+    text: "In this course you’ll learn exactly how to write every single piece of copy on your website in just 7 days.",
     img: Image,
   },
   {
@@ -42,7 +42,7 @@ const Testimonial = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setIndex((prev) => (prev + 1) % testimonials.length);
-    }, 4000);
+    }, 5000);
     return () => clearInterval(interval);
   }, []);
 

@@ -45,6 +45,7 @@ html, body, #root {
 
 .para {
     font-size: 24px;
+    line-height: 2.25rem;
 }
 
 .imageSection {
@@ -64,6 +65,8 @@ html, body, #root {
     }
     .heading {
         font-size: 1.5rem; /* smaller for small screens */
+        padding-left: 3%;
+        padding-top: 3%;
     }
     .paragraph {
         width: 80%;
@@ -71,6 +74,11 @@ html, body, #root {
     .imageSection {
         width: 80%;
         height: auto;
+    }
+
+    .para {
+        font-size: 1.25rem;
+        line-height: 28px;
     }
 }
 

@@ -76,7 +76,7 @@
     .container {
         min-height: auto; /* Let content decide height on small screens */
         padding: 0 0; 
-        margin-top: 5%;
+        margin-top: 7%;
     }
 
     .items {

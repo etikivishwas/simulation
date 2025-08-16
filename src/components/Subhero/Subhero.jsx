@@ -9,7 +9,7 @@ function Subhero() {
   useEffect(() => {
     const t = setTimeout(() => {
       setIndex(i => (i + 1) % words.length);
-    }, 1500);
+    }, 1700);
     return () => clearTimeout(t);
   }, [index, words.length]);
 

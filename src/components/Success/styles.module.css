@@ -110,16 +110,17 @@ body {
   color: #666;
 }
 
-.cta-btn {
-  background: orange;
-  color: white;
-  padding: 12px 24px;
-  border-radius: 25px;
+.ctaBtn {
+  background-color: #ff7a00;
+  color: #fff;
   border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
   cursor: pointer;
-  font-weight: bold;
 }
 
-.cta-btn:hover {
-  background: #e69500;
+.ctaBtn:hover {
+  background-color: #e96e00;
 }
