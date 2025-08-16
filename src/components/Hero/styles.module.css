@@ -24,6 +24,10 @@
     flex-direction: column;
     gap: 2rem;
   }
+
+  .testSection {
+    width: 70%;
+  }
 }
 
 .textSection {

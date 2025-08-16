@@ -55,7 +55,7 @@ html, body, #root {
     .container {
         width: 100%;
         height: auto; /* Adjust height for smaller screens */
-        padding: 0 1rem; /* Add some padding */
+        padding: 0 0rem; /* Add some padding */
     }
     .header {
         width: 90%;

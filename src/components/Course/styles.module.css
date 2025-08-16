@@ -26,6 +26,7 @@ body {
 .title {
     font-size: 2rem;
     font-weight: 600;
+    margin: 1rem;
 }
 
 .items {
@@ -55,7 +56,7 @@ body {
 .para1 {
     padding: 1rem 1rem;
     border-radius: 25px;
-    line-height: 140%;
+    line-height: 150%;
     background-color: #fff;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -88,7 +89,8 @@ body {
     }
 
     .title {
-        padding-bottom: 0;
+        padding: 0;
+        margin: 0.5rem;
     }
 
     .item1 {
@@ -108,5 +110,14 @@ body {
     .imageSection {
         width: 100%;
         height: 100%;
+    }
+
+    .para2 {
+        margin: 0;
+        margin-bottom: 0.5rem;
+    }
+
+    .para1 {
+        line-height: 30px;
     }
 }
