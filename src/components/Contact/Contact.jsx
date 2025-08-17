@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import styles from "./styles.module.css";
 import Image from "./pic2.jpg";
 import { motion } from "framer-motion";
+import emailjs from "emailjs-com";
 
 const popup = {
   hidden: { opacity: 0, y: 50 },
@@ -24,35 +25,25 @@ function Contact() {
     });
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
 
-    // prepare form data
-    const data = new FormData();
-    data.append("name", formData.name);
-    data.append("email", formData.email);
-    data.append("phone", formData.phone);
-    data.append("resume", formData.resume ? formData.resume.name : "No file");
-
-    try {
-      const response = await fetch(
-        "https://script.google.com/macros/s/AKfycbxn89PHcGkCM74jn02cNszexyy-6z8XJ6HZCb0_TL7TSyso5kaAAVgoOb4gMZnxr6WcjA/exec",
-        {
-          method: "POST",
-          body: JSON.stringify(data),
-          headers: { "Content-Type": "application/json" }
+    emailjs
+      .sendForm(
+        "service_clogu5l", // ✅ Your Service ID
+        "template_7mb8inj", // ✅ Your Template ID
+        e.target,           // send the form directly
+        "_UKlzApPTIhFuV1RI" // ✅ Your Public Key
+      )
+      .then(
+        (result) => {
+          alert("Message sent successfully ✅");
+          setFormData({ name: "", email: "", phone: "", resume: null });
+        },
+        (error) => {
+          alert("Failed to send message ❌ " + error.text);
         }
       );
-
-      if (response.ok) {
-        alert("Form submitted successfully!");
-        setFormData({ name: "", email: "", phone: "", resume: null });
-      } else {
-        alert("Error submitting form. Please try again.");
-      }
-    } catch (error) {
-      alert("Error: " + error.message);
-    }
   };
 
   return (
@@ -119,3 +110,4 @@ function Contact() {
 }
 
 export default Contact;
+
