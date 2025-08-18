@@ -1,3 +1,118 @@
+// import React, { useState } from "react";
+// import styles from "./styles.module.css";
+// import Image from "./pic2.jpg";
+// import { motion } from "framer-motion";
+// import emailjs from "emailjs-com";
+
+// const popup = {
+//   hidden: { opacity: 0, y: 50 },
+//   visible: { opacity: 1, y: 0, transition: { duration: 0.8 } },
+// };
+
+// function Contact() {
+//   const [formData, setFormData] = useState({
+//     name: "",
+//     email: "",
+//     phone: "",
+//     resume: null,
+//   });
+
+//   const handleChange = (e) => {
+//     const { name, value, files } = e.target;
+//     setFormData({
+//       ...formData,
+//       [name]: files ? files[0] : value,
+//     });
+//   };
+
+//   const handleSubmit = (e) => {
+//     e.preventDefault();
+
+//     emailjs
+//       .sendForm(
+//         "service_clogu5l", // ✅ Your Service ID
+//         "template_7mb8inj", // ✅ Your Template ID
+//         e.target,           // send the form directly
+//         "_UKlzApPTIhFuV1RI" // ✅ Your Public Key
+//       )
+//       .then(
+//         (result) => {
+//           alert("Message sent successfully ✅");
+//           setFormData({ name: "", email: "", phone: "", resume: null });
+//         },
+//         (error) => {
+//           alert("Failed to send message ❌ " + error.text);
+//         }
+//       );
+//   };
+
+//   return (
+//     <motion.div
+//       className={styles.container}
+//       initial="hidden"
+//       whileInView="visible"
+//       viewport={{ once: true, amount: 0.3 }}
+//     >
+//       {/* Left Image */}
+//       <motion.div variants={popup} className={styles.image}>
+//         <img src={Image} alt="Description" className={styles.imageSec} />
+//       </motion.div>
+
+//       {/* Middle Content */}
+//       <motion.div variants={popup} className={styles.content}>
+//         <h2 style={{ color: "#fff", textAlign: "center", marginTop: "2rem" }}>
+//           Let’s Work Together
+//         </h2>
+//         <p style={{ color: "#fff", padding: "1rem", textAlign: "center" }}>
+//           We help brands grow through design, technology, and marketing.
+//           Reach out to see how we can make your vision a reality.
+//         </p>
+//       </motion.div>
+
+//       {/* Right Form */}
+//       <motion.div variants={popup} className={styles.form}>
+//         <h2 className={styles.heading}>Contact Us</h2>
+//         <form onSubmit={handleSubmit}>
+//           <input
+//             type="text"
+//             placeholder="Name"
+//             name="name"
+//             value={formData.name}
+//             onChange={handleChange}
+//             required
+//           />
+//           <input
+//             type="email"
+//             placeholder="Email"
+//             name="email"
+//             value={formData.email}
+//             onChange={handleChange}
+//             required
+//           />
+//           <input
+//             type="number"
+//             placeholder="Phone Number"
+//             name="phone"
+//             value={formData.phone}
+//             onChange={handleChange}
+//           />
+//           <input
+//             type="file"
+//             name="resume"
+//             accept=".pdf,.doc,.docx"
+//             onChange={handleChange}
+//           />
+//           <input type="submit" value="Send" />
+//         </form>
+//       </motion.div>
+//     </motion.div>
+//   );
+// }
+
+// export default Contact;
+
+
+
 import React, { useState } from "react";
 import styles from "./styles.module.css";
 import Image from "./pic2.jpg";
@@ -14,14 +129,14 @@ function Contact() {
     name: "",
     email: "",
     phone: "",
-    resume: null,
+    resume: "", // now resume is a text field (Google Drive link)
   });
 
   const handleChange = (e) => {
-    const { name, value, files } = e.target;
+    const { name, value } = e.target;
     setFormData({
       ...formData,
-      [name]: files ? files[0] : value,
+      [name]: value,
     });
   };
 
@@ -30,15 +145,15 @@ function Contact() {
 
     emailjs
       .sendForm(
-        "service_clogu5l", // ✅ Your Service ID
-        "template_7mb8inj", // ✅ Your Template ID
+        "service_0httq9y", // ✅ Your Service ID
+        "template_17nq0pu", // ✅ Your Template ID
         e.target,           // send the form directly
-        "_UKlzApPTIhFuV1RI" // ✅ Your Public Key
+        "nmORXH2fw48ZNn8Gc" // ✅ Your Public Key
       )
       .then(
         (result) => {
           alert("Message sent successfully ✅");
-          setFormData({ name: "", email: "", phone: "", resume: null });
+          setFormData({ name: "", email: "", phone: "", resume: "" });
         },
         (error) => {
           alert("Failed to send message ❌ " + error.text);
@@ -97,10 +212,12 @@ function Contact() {
             onChange={handleChange}
           />
           <input
-            type="file"
+            type="text"
+            placeholder="Resume Google Drive link (make it access anyone with link)"
             name="resume"
-            accept=".pdf,.doc,.docx"
+            value={formData.resume}
             onChange={handleChange}
+            required
           />
           <input type="submit" value="Send" />
         </form>
@@ -110,4 +227,3 @@ function Contact() {
 }
 
 export default Contact;
-
