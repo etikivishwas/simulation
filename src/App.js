@@ -9,6 +9,7 @@ import Success from './components/Success/Success';
 import Course from './components/Course/Course';
 import Contact from './components/Contact/Contact';
 import Testimonials from './components/Testimonials/Testimonials';
+import Footer from './components/Footer/Footer';
 
 function App() {
   const contactRef = useRef(null);
@@ -45,6 +46,7 @@ function App() {
       <div ref={contactRef}>
         <Contact />
       </div>
+      <Footer />
     </div>
   );
 }

@@ -1,9 +1,10 @@
 import React from 'react'
 import styles from './styles.module.css'
 import Lottie from 'lottie-react';
-import GifF from './gif3.json';
 import GifB from './gif4.json';
 import GifFu from './gif5.json';
+import GifS from './gif6.json';
+import Gifs from './gif7.json';
 
 function Course() {
   return (
@@ -13,13 +14,21 @@ function Course() {
       </div>
       <div className={styles.items}>
         <div className={styles.item1}>
-            <p className={styles.para2}>Front-end Development</p>
-            <p className={styles.para1}>Gain hands-on experience in Frontend Development with real-world corporate workflows. Our program equips you with practical skills in HTML, CSS, JavaScript, and modern frameworks while simulating professional project environments. Using cloud-based VMware workspaces, you’ll collaborate, troubleshoot, and deliver just like in a corporate setting. This immersive approach not only sharpens your technical expertise but also builds essential workplace problem-solving and communication skills. Step into the world of frontend development prepared for the demands of the modern corporate landscape.</p>
+            <p className={styles.para2}>Software Development Engineer</p>
+            <p className={styles.para1}>The Software Development Engineer course provides comprehensive training in the 
+              design, development, testing, and deployment of high-quality software, utilizing 
+              industry-standard tools and methodologies. Through hands-on projects, participants 
+              will acquire practical programming skills, cultivate effective teamwork, and gain a 
+              thorough understanding of the software development lifecycle. <br />
+              Upon completion of the internship, participants will possess the capability to 
+              construct and launch real-world applications, thereby enabling them to confidently 
+              address engineering challenges within professional settings.
+            </p>
         </div>
         <div className={styles.item2}>
             <div className={styles.imageSection}>
               <Lottie 
-                animationData={GifF} 
+                animationData={GifS} 
                 loop={true} 
                 className={styles.heroImage} 
               />
@@ -39,15 +48,33 @@ function Course() {
 
         </div>
         <div className={styles.item1}>
-            <p className={styles.para2}>Back-end Development</p>
-            <p className={styles.para1}>Master Backend Development through immersive, corporate-style training. Our program focuses on building robust server-side applications using technologies like Python, Django, Node.js, and MySQL, all within a simulated enterprise environment. With cloud-based VMware labs, you’ll work on real-world scenarios involving APIs, databases, and security protocols. This hands-on approach enhances not just your coding skills, but also your ability to solve complex problems under real workplace conditions. Prepare to excel in backend development with the confidence and competence of a corporate professional.</p>
+            <p className={styles.para2}>Software Testing Engineer </p>
+            <p className={styles.para1}>The Software Testing Engineer course provides comprehensive training in manual 
+              and automated software testing methodologies, ensuring the development of 
+              reliable, functional, and defect-free software. Utilizing industry-standard tools and 
+              techniques, participants will engage in practical assignments encompassing test 
+              case design, defect identification and reporting, and software quality validation 
+              throughout the development lifecycle. <br />Upon completion of the internship, individuals will possess the requisite skills to 
+              execute comprehensive testing processes, formulate effective test plans, and 
+              confidently verify real-world applications within diverse professional engineering 
+              environments.
+            </p>
         </div>
         
        </div>
        <div className={styles.items}>
         <div className={styles.item1}>
-            <p className={styles.para2}>Fullstack Development</p>
-            <p className={styles.para1}>Become a proficient Full Stack Developer with real-world corporate project experience. Our program covers both frontend technologies like HTML, CSS, JavaScript, and React, and backend frameworks such as Python, Django, Node.js, and MySQL. Using cloud-based VMware environments, you’ll build, deploy, and maintain complete applications from start to finish, mirroring enterprise workflows. This end-to-end training strengthens your technical versatility while sharpening collaboration, problem-solving, and agile development skills. Step confidently into the corporate world as a job-ready full stack professional.</p>
+            <p className={styles.para2}>DevOps </p>
+            <p className={styles.para1}>The DevOps course provides comprehensive instruction on integrating development 
+              and operations through proficiency in version control, CI/CD pipelines, 
+              containerization (Docker & Kubernetes), cloud infrastructure, and automation. 
+              Practical exercises will facilitate the deployment and maintenance of scalable, 
+              reliable applications within authentic environments. <br />
+              Upon completion of the internship, participants will possess expertise in automating 
+              software delivery, managing contemporary infrastructure, and collaborating 
+              effectively with interdisciplinary teams to provide robust cloud-based and extended 
+              solutions.
+            </p>
         </div>
         <div className={styles.item2}>
             <div className={styles.imageSection}>
@@ -64,7 +91,7 @@ function Course() {
                 <div className={styles.item2}>
             <div className={styles.imageSection}>
               <Lottie 
-                animationData={GifF} 
+                animationData={Gifs} 
                 loop={true} 
                 className={styles.heroImage} 
               />
@@ -72,8 +99,18 @@ function Course() {
 
         </div>
         <div className={styles.item1}>
-            <p className={styles.para2}>Front-end Development</p>
-            <p className={styles.para1}>Gain hands-on experience in Frontend Development with real-world corporate workflows. Our program equips you with practical skills in HTML, CSS, JavaScript, and modern frameworks while simulating professional project environments. Using cloud-based VMware workspaces, you’ll collaborate, troubleshoot, and deliver just like in a corporate setting. This immersive approach not only sharpens your technical expertise but also builds essential workplace problem-solving and communication skills. Step into the world of frontend development prepared for the demands of the modern corporate landscape.</p>
+            <p className={styles.para2}>Software Architect </p>
+            <p className={styles.para1}>The Software Architect course provides comprehensive instruction in designing and 
+              structuring intricate software systems. Participants will acquire proficiency in 
+              architectural principles, design patterns, and modeling methodologies such as UML 
+              and C4. The curriculum emphasizes the development of scalable, maintainable, and 
+              high-quality software architectures for cloud, mobile, and distributed systems, 
+              achieved through practical projects and collaborative exercises. <br />
+              Upon completion of the internship, participants will possess the capability to 
+              evaluate and design software architectures congruent with business objectives, lead 
+              technical decision-making processes, and effectively collaborate with development 
+              teams to deliver robust software solutions.
+            </p>
         </div>
         
        </div>
