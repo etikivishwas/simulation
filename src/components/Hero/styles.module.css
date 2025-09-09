@@ -9,6 +9,8 @@
   background-color: #fff;
   gap: 2rem;
   font-family: 'Geist mono', monospace;
+  padding-top: 0;
+  padding-bottom: 3rem;
 }
 
 @media (min-width: 768px) {
