@@ -6,7 +6,7 @@ function Navbar() {
   return (
     <div className={styles.container}>
       <MotionDiv className={styles.navbar}>
-        <h2 className={styles.heading}>SIMULATION</h2>
+        <h2 className={styles.heading}>VECTOR.edu</h2>
       </MotionDiv>
     </div>
   )

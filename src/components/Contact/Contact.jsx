@@ -61,17 +61,6 @@ function Contact() {
         <img src={Image} alt="Description" className={styles.imageSec} />
       </motion.div>
 
-      {/* Middle Content */}
-      <motion.div variants={popup} className={styles.content}>
-        <h2 style={{ color: "#fff", textAlign: "center", marginTop: "2rem" }}>
-          Let’s Work Together
-        </h2>
-        <p style={{ color: "#fff", padding: "1rem", textAlign: "center" }}>
-          We help brands grow through design, technology, and marketing.
-          Reach out to see how we can make your vision a reality.
-        </p>
-      </motion.div>
-
       {/* Right Form */}
       <motion.div variants={popup} className={styles.form}>
         <h2 className={styles.heading}>Contact Us</h2>
