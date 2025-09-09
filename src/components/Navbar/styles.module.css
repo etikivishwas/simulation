@@ -18,3 +18,11 @@
     margin-top: 2rem;
 }
 
+@media (max-width: 768px) {
+    .heading {
+        padding-left: 1rem;
+        margin-left: 1rem;
+        margin-top: 1rem;
+    }
+}
+
