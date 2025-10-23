@@ -1,28 +1,29 @@
-
-
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
 }
 
-.heading {
-    font-family: 'Poppins', sans-serif;
-    font-size: 32px;
-    font-weight: bold;
-    color: black;
-    letter-spacing: 10%;
-    padding-left: 1.5rem;
-    font-family: 'Geist mono', monospace;
-    margin-left: 2rem;
-    margin-top: 2rem;
+/* Logo styling */
+.logo {
+  width: 150px; /* adjust size as needed */
+  height: auto;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: transform 0.3s ease;
 }
 
+.logo:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive adjustments */
 @media (max-width: 768px) {
-    .heading {
-        padding-left: 1rem;
-        margin-left: 1rem;
-        margin-top: 1rem;
-    }
+  .logo {
+    width: 120px;
+    margin-left: 0.5rem;
+    margin-top: 0.5rem;
+  }
 }
-

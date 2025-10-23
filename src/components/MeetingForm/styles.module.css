@@ -1,0 +1,96 @@
+.meetingSection {
+  background: #ffffff;
+  padding: 20px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  padding: 40px;
+  text-align: center;
+}
+
+.container h2 {
+  color: #004aad;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.container p {
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.formGroup label {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.formGroup input,
+.formGroup textarea,
+.formGroup select {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: border 0.3s;
+}
+
+.formGroup input:focus,
+.formGroup textarea:focus {
+  border-color: #004aad;
+}
+
+.formGroupInline {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.formGroupInline div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.submitBtn {
+  background-color: #e56c00;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  padding: 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.submitBtn:hover {
+  background-color: #003a8c;
+}
+
+.statusMessage {
+  margin-top: 20px;
+  color: #006400;
+  font-weight: 500;
+  text-align: center;
+}

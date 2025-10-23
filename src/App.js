@@ -10,6 +10,7 @@ import Course from './components/Course/Course';
 import Contact from './components/Contact/Contact';
 import Testimonials from './components/Testimonials/Testimonials';
 import Footer from './components/Footer/Footer';
+import MeetingForm from './components/MeetingForm/MeetingForm';
 
 function App() {
   const contactRef = useRef(null);
@@ -41,8 +42,9 @@ function App() {
       <div ref={courseRef}>
         <Course />
       </div>
+      <MeetingForm />
       
-      <Testimonials />
+      {/* <Testimonials /> */}
       <div ref={contactRef}>
         <Contact />
       </div>
