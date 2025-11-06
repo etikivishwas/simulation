@@ -11,6 +11,7 @@ import Contact from './components/Contact/Contact';
 import Testimonials from './components/Testimonials/Testimonials';
 import Footer from './components/Footer/Footer';
 import MeetingForm from './components/MeetingForm/MeetingForm';
+import { SignUpHero } from './components/SignUp/SignUpHero';
 
 function App() {
   const contactRef = useRef(null);
@@ -34,6 +35,7 @@ function App() {
       <Navbar />
       <Hero onContactClick={scrollToContact} onLearnMoreClick={scrollToAbout} />
       <Subhero />
+      <SignUpHero />
       <div ref={aboutRef}>
         <About />
       </div>

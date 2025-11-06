@@ -1,6 +1,6 @@
 // Footer.jsx
 import React from "react";
-import { FaPhone, FaLinkedin, FaInstagram } from "react-icons/fa";
+import { FaPhone, FaLinkedin, FaInstagram, FaHeart } from "react-icons/fa";
 import styles from "./Footer.module.css";
 
 const Footer = () => {
@@ -8,7 +8,7 @@ const Footer = () => {
     <footer className={styles.container}>
       <div className={styles.box}>
         <p className={styles.subtitle}>
-          Have a website or brand that could use some ❤️
+          Have a website or brand that could use some <FaHeart className="text-red-500" />
         </p>
         <h2 className={styles.title}>Give us a shout!</h2>
 

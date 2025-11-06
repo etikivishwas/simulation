@@ -11,6 +11,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  padding: 4rem;
 }
 
 .overlay {
@@ -26,7 +27,7 @@ body {
 .content {
   position: relative;
   z-index: 2;
-  max-width: 700px;
+  max-width: 730px;
   padding: 2rem;
   padding-top: 15%;
   color: white;
