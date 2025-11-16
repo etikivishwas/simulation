@@ -6,7 +6,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: 'Geist mono', monospace;
+    font-family: 'Poppins', sans-serif;
+    transition: background-color 0.3s ease;
 }
 
 .content {
@@ -18,15 +19,17 @@
 .heading {
     font-size: 3rem;
     margin: 0.5rem;
+    transition: color 0.3s ease;
 }
 
 .para1, .para2 {
     margin: 0;
     font-size: 1.2rem;
+    transition: color 0.3s ease;
 }
 
 .highlight {
-  color: purple; 
+  transition: color 0.3s ease;
 }
 
 .items {
@@ -41,35 +44,42 @@
 }
 
 .item {
-    width: 20%;
-    height: 95%;
-    border: 2px solid black;
-    border-radius: 20px;
-}
-
-.item {
     flex: 1 1 250px;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 1.5rem;
-    background: white;
     border-radius: 1rem;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
+.item p:last-child {
+    margin-top: 0.5rem;
+    text-align: center;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
 
 .icon {
     font-size: 2rem;
-    color: transparent; 
-    stroke: purple; 
-    color: purple; 
     margin-bottom: 1rem;
+    transition: color 0.3s ease;
 }
 
 .para3 {
     margin: 0;
     font-size: 1.5rem;
     font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.para4 {
+    margin: 0;
+    margin-top: 0.5rem;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    text-align: center;
+    transition: color 0.3s ease;
 }
 
 @media (max-width: 768px) {

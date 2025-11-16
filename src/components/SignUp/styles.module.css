@@ -4,7 +4,7 @@
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   position: relative;
   overflow: hidden;
-  font-family: 'Geist mono', monospace;
+  font-family: 'Poppins', sans-serif;
 }
 
 .container::before {
@@ -58,7 +58,7 @@
   border-radius: 12px;
   cursor: pointer;
   transition: all 0.3s ease;
-  font-family: 'Geist mono', monospace;
+  font-family: 'Poppins', sans-serif;
   position: relative;
   overflow: hidden;
   display: block;

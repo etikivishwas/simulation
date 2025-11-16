@@ -1,30 +1,30 @@
 .meetingSection {
   margin-top: 7rem;
-  background: #ffffff;
   padding: 20px 20px;
   display: flex;
   justify-content: center;
+  transition: background-color 0.3s ease;
 }
 
 .container {
   width: 100%;
   max-width: 600px;
-  background: white;
   border-radius: 16px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
   padding: 40px;
   text-align: center;
+  transition: background-color 0.3s ease;
 }
 
 .container h2 {
-  color: #004aad;
   font-size: 28px;
   margin-bottom: 10px;
+  transition: color 0.3s ease;
 }
 
 .container p {
-  color: #555;
   margin-bottom: 30px;
+  transition: color 0.3s ease;
 }
 
 .form {
@@ -41,8 +41,8 @@
 
 .formGroup label {
   font-weight: 600;
-  color: #333;
   margin-bottom: 8px;
+  transition: color 0.3s ease;
 }
 
 .formGroup input,
@@ -51,14 +51,15 @@
   width: 100%;
   padding: 12px;
   border-radius: 8px;
-  border: 1px solid #ccc;
+  border: 1px solid;
   outline: none;
-  transition: border 0.3s;
+  transition: border-color 0.3s ease, background-color 0.3s ease, color 0.3s ease;
 }
 
 .formGroup input:focus,
 .formGroup textarea:focus {
-  border-color: #004aad;
+  outline: 2px solid;
+  outline-offset: 2px;
 }
 
 .formGroupInline {
@@ -74,24 +75,27 @@
 }
 
 .submitBtn {
-  background-color: #e56c00;
-  color: white;
   font-size: 16px;
   font-weight: 600;
   border: none;
   padding: 14px;
   border-radius: 8px;
   cursor: pointer;
-  transition: background 0.3s;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .submitBtn:hover {
-  background-color: #003a8c;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.submitBtn:active {
+  transform: translateY(0);
 }
 
 .statusMessage {
   margin-top: 20px;
-  color: #006400;
   font-weight: 500;
   text-align: center;
+  transition: color 0.3s ease;
 }

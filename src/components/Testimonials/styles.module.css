@@ -9,7 +9,7 @@
   font-weight: bold;
   color: #9321b3;
   margin-bottom: 2rem;
-  font-family: "Geist mono", monospace;
+  font-family: "Poppins", sans-serif;
   letter-spacing: 2px;
 }
 
@@ -55,14 +55,14 @@
   font-weight: 600;
   color: #111827;
   margin: 0;
-  font-family: "Geist mono", monospace;
+  font-family: "Poppins", sans-serif;
 }
 
 .profileRole {
   font-size: 0.95rem;
   color: #6b7280;
   margin: 0;
-  font-family: "Geist mono", monospace;
+  font-family: "Poppins", sans-serif;
 }
 
 .testimonialText {

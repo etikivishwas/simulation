@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
 import './App.css';
+import { ThemeProvider } from './contexts/ThemeContext';
 import Navbar from './components/Navbar/Navbar';
 import Hero from './components/Hero/Hero';
 import Subhero from './components/Subhero/Subhero';
@@ -31,27 +32,29 @@ function App() {
   };
 
   return (
-    <div className="App">
-      <Navbar />
-      <Hero onContactClick={scrollToContact} onLearnMoreClick={scrollToAbout} />
-      <Subhero />
-      <SignUpHero />
-      <div ref={aboutRef}>
-        <About />
+    <ThemeProvider>
+      <div className="App">
+        <Navbar />
+        <Hero onContactClick={scrollToContact} onLearnMoreClick={scrollToAbout} />
+        <Subhero />
+        <SignUpHero />
+        <div ref={aboutRef}>
+          <About />
+        </div>
+        <Fail />
+        <Success onExploreMore={scrollToCourse} />
+        <div ref={courseRef}>
+          <Course />
+        </div>
+        <MeetingForm />
+        
+        {/* <Testimonials /> */}
+        <div ref={contactRef}>
+          <Contact />
+        </div>
+        <Footer />
       </div>
-      <Fail />
-      <Success onExploreMore={scrollToCourse} />
-      <div ref={courseRef}>
-        <Course />
-      </div>
-      <MeetingForm />
-      
-      {/* <Testimonials /> */}
-      <div ref={contactRef}>
-        <Contact />
-      </div>
-      <Footer />
-    </div>
+    </ThemeProvider>
   );
 }
 

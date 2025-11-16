@@ -1,16 +1,15 @@
-
-
 .container {
   display: flex;
+  height: 100vh;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   padding: 2rem 2rem;
-  background-color: #fff;
   gap: 2rem;
-  font-family: 'Geist mono', monospace;
+  font-family: 'Poppins', sans-serif;
   padding-top: 0;
   padding-bottom: 3rem;
+  transition: background-color 0.3s ease;
 }
 
 @media (min-width: 768px) {
@@ -40,18 +39,18 @@
 .heading {
   font-size: 2.5rem;
   font-weight: bold;
-  color: #111;
   line-height: 1.2;
-  font-family: 'Geist mono', monospace;
+  font-family: 'Poppins', sans-serif;
   word-break: keep-all;
   padding-left: 20%;
+  transition: color 0.3s ease;
 }
 
 .subText {
   margin-top: 1rem;
-  color: #555;
   font-size: 1.3rem;
   padding-left: 21%;
+  transition: color 0.3s ease;
 }
 
 .buttonGroup {
@@ -63,34 +62,42 @@
 }
 
 .btnPrimary {
-  background-color: #ff7a00;
-  color: #fff;
   border: none;
   padding: 0.8rem 1.5rem;
   border-radius: 8px;
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .btnPrimary:hover {
-  background-color: #e96e00;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.btnPrimary:active {
+  transform: translateY(0);
 }
 
 .btnOutline {
   background: transparent;
-  color: #ff7a00;
-  border: 2px solid #ccc;
+  border: 2px solid;
   padding: 0.8rem 1.5rem;
   border-radius: 8px;
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .btnOutline:hover {
-  background-color: #fff7f0;
-  border-color: #ff7a00;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.btnOutline:active {
+  transform: translateY(0);
 }
 
 .imageSection {

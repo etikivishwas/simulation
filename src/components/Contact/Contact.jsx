@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import styles from "./styles.module.css";
 import Image from "./pic2.jpg";
 import { motion } from "framer-motion";
+import { useTheme } from "../../contexts/ThemeContext";
 
 const popup = {
   hidden: { opacity: 0, y: 50 },
@@ -9,6 +10,7 @@ const popup = {
 };
 
 function Contact() {
+  const { theme } = useTheme();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -61,6 +63,9 @@ function Contact() {
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.3 }}
+      style={{
+        backgroundColor: theme.colors.background,
+      }}
     >
       {/* Left Image Section */}
       <motion.div variants={popup} className={styles.image}>
@@ -68,8 +73,19 @@ function Contact() {
       </motion.div>
 
       {/* Right Form Section */}
-      <motion.div variants={popup} className={styles.form}>
-        <h2 className={styles.heading}>Contact Us For Candidate Selection Process</h2>
+      <motion.div 
+        variants={popup} 
+        className={styles.form}
+        style={{
+          backgroundColor: theme.colors.backgroundSecondary,
+        }}
+      >
+        <h2 
+          className={styles.heading}
+          style={{ color: theme.colors.text }}
+        >
+          Contact Us For Candidate Selection Process
+        </h2>
         <form onSubmit={handleSubmit}>
           <input
             type="text"
@@ -78,6 +94,11 @@ function Contact() {
             value={formData.name}
             onChange={handleChange}
             required
+            style={{
+              backgroundColor: theme.colors.background,
+              color: theme.colors.text,
+              borderColor: theme.colors.border,
+            }}
           />
 
           <input
@@ -87,6 +108,11 @@ function Contact() {
             value={formData.email}
             onChange={handleChange}
             required
+            style={{
+              backgroundColor: theme.colors.background,
+              color: theme.colors.text,
+              borderColor: theme.colors.border,
+            }}
           />
 
           <input
@@ -96,6 +122,11 @@ function Contact() {
             value={formData.phone}
             onChange={handleChange}
             required
+            style={{
+              backgroundColor: theme.colors.background,
+              color: theme.colors.text,
+              borderColor: theme.colors.border,
+            }}
           />
 
           <input
@@ -105,13 +136,38 @@ function Contact() {
             value={formData.resume}
             onChange={handleChange}
             required
+            style={{
+              backgroundColor: theme.colors.background,
+              color: theme.colors.text,
+              borderColor: theme.colors.border,
+            }}
           />
 
-          <input type="submit" value="Send" />
+          <input 
+            type="submit" 
+            value="Send"
+            style={{
+              backgroundColor: theme.colors.primary,
+              color: theme.colors.textInverse,
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.backgroundColor = theme.colors.primaryDark;
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.backgroundColor = theme.colors.primary;
+            }}
+          />
         </form>
 
         {responseMessage && (
-          <p style={{ color: "black", marginTop: "1rem" }}>{responseMessage}</p>
+          <p 
+            style={{ 
+              color: theme.colors.text, 
+              marginTop: "1rem" 
+            }}
+          >
+            {responseMessage}
+          </p>
         )}
       </motion.div>
     </motion.div>
