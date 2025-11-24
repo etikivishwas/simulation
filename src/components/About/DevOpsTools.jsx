@@ -25,15 +25,28 @@ function DevOpsTools() {
 
   // Update wave width on window resize
   useEffect(() => {
-    const updateWaveWidth = () => {
-      setWaveWidth(Math.max(window.innerWidth - 200, 600));
-    };
-    
-    updateWaveWidth();
-    window.addEventListener('resize', updateWaveWidth);
-    
-    return () => window.removeEventListener('resize', updateWaveWidth);
-  }, []);
+  const updateWaveWidth = () => {
+    let width;
+
+    if (window.innerWidth < 480) {
+      width = window.innerWidth; // full width mobile
+    } 
+    else if (window.innerWidth < 768) {
+      width = window.innerWidth - 80; // small tablets
+    } 
+    else {
+      width = Math.max(window.innerWidth - 200, 800); // desktop
+    }
+
+    setWaveWidth(width);
+  };
+
+  updateWaveWidth();
+  window.addEventListener("resize", updateWaveWidth);
+
+  return () => window.removeEventListener("resize", updateWaveWidth);
+}, []);
+
 
   useEffect(() => {
     // Continuous wave animation - move from left to right

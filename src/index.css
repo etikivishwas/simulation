@@ -2,6 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Prevent horizontal scrolling on mobile */
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+/* Force all sections to fit inside screen */
+* {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+
 :root {
   /* Light theme defaults (white, black, nature green) */
   --color-primary: #22c55e;

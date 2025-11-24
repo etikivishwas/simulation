@@ -63,6 +63,10 @@ body {
 @media (max-width: 768px) {
   .heading {
     line-height: 95%;
+    padding-left: 0;
+  }
+  .content{
+    padding-left: 0;
   }
 }
 
