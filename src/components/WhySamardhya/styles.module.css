@@ -13,7 +13,7 @@
 .content {
     text-align: center;
     width: 80%;
-    height: 25%;
+    margin-bottom: 2rem;
 }
 
 .heading {
@@ -28,13 +28,16 @@
     transition: color 0.3s ease;
 }
 
+.para2 {
+    margin-top: 0.5rem;
+}
+
 .highlight {
   transition: color 0.3s ease;
 }
 
 .items {
     width: 90%;
-    height: 60%;
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
@@ -48,10 +51,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
     padding: 1.5rem;
     border-radius: 1rem;
-    min-height: 280px;
     transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
@@ -85,9 +86,24 @@
     transition: color 0.3s ease;
 }
 
+.summary {
+    width: 80%;
+    text-align: center;
+    margin-top: 3rem;
+    padding: 2rem;
+}
+
+.summaryText {
+    font-size: 1.3rem;
+    font-weight: 600;
+    font-style: italic;
+    line-height: 1.6;
+    transition: color 0.3s ease;
+}
+
 @media (max-width: 768px) {
     .container {
-        min-height: auto; /* Let content decide height on small screens */
+        min-height: auto;
         padding: 0 0; 
         margin-top: 7%;
     }
@@ -95,12 +111,12 @@
     .items {
         flex-direction: column;
         align-items: center;
-        gap: 1.5rem; /* Space between stacked items */
+        gap: 1.5rem;
     }
 
     .item {
-        width: 75%; /* Fill more width on mobile */
-        height: auto; /* Avoid overflow */
+        width: 75%;
+        height: auto;
     }
 
     .icon {
@@ -117,4 +133,15 @@
     .para2 {
         margin: 0.5rem;
     }
+
+    .summary {
+        width: 90%;
+        padding: 1rem;
+        margin-top: 2rem;
+    }
+
+    .summaryText {
+        font-size: 1.1rem;
+    }
 }
+

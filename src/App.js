@@ -6,7 +6,9 @@ import Hero from './components/Hero/Hero';
 import Subhero from './components/Subhero/Subhero';
 import About from './components/About/About'; 
 import Fail from './components/Fail/Fail';
+import WhySamardhya from './components/WhySamardhya/WhySamardhya';
 import Success from './components/Success/Success';
+import HowItWorks from './components/HowItWorks/HowItWorks';
 import Course from './components/Course/Course';
 import Contact from './components/Contact/Contact';
 import Testimonials from './components/Testimonials/Testimonials';
@@ -41,8 +43,10 @@ function App() {
         <div ref={aboutRef}>
           <About />
         </div>
+        <WhySamardhya />
         <Fail />
         <Success onExploreMore={scrollToCourse} />
+        <HowItWorks />
         <div ref={courseRef}>
           <Course />
         </div>

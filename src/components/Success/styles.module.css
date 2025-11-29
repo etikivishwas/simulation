@@ -98,6 +98,14 @@ body {
   transition: width 1s ease, background-color 0.3s ease;
 }
 
+.skillDescription {
+  font-size: 0.85rem;
+  margin-top: 0.5rem;
+  font-style: italic;
+  line-height: 1.4;
+  transition: color 0.3s ease;
+}
+
 .error {
   /* Error color handled by theme */
 }

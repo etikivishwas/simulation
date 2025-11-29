@@ -19,24 +19,36 @@ function About() {
           className={styles.heading}
           style={{ color: theme.colors.text }}
         >
-          About the <span 
+          About Us — <span 
             className={styles.highlight}
             style={{ color: theme.colors.primary }}
           >
-            program
+            Raw, Human, No Filters
           </span>
         </h2>
         <p 
           className={styles.para1}
           style={{ color: theme.colors.textSecondary }}
         >
-          Cutting-edge, AI-powered internship and capstone experience designed to mirror workflows at top MNC's like TCS, Accenture, AWS, Flipkart, and Infosys.
+          We started Samardhya because life was NOT sorted. No one helped. No one guided.
         </p>
         <p 
           className={styles.para2}
           style={{ color: theme.colors.textSecondary }}
         >
-          The program integrates real corporate tools, processes, and standards, ensuring participants gain hands-on experience that matches industry expectations.
+          Colleges teach formulas and paragraphs, but nobody teaches you how to make a career decision without crying internally.
+        </p>
+        <p 
+          className={styles.para2}
+          style={{ color: theme.colors.textSecondary }}
+        >
+          We turn your 'I'm confused' and 'I'm lost' moments into 'Okay, chill, I know what to do next.'
+        </p>
+        <p 
+          className={styles.para2}
+          style={{ color: theme.colors.textSecondary }}
+        >
+          No lectures. No uncle-level advice. Just real talk + real results.
         </p>
       </div>
       <div className={styles.animationSection}>

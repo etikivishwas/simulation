@@ -5,15 +5,19 @@ import { useTheme } from '../../contexts/ThemeContext';
 
 function Subhero() {
   const { theme } = useTheme();
-  const words = ['Training', 'Knowledge', 'Expertise'];
+  const messages = [
+    "Confused? Good. We can work with that.",
+    "Skills > CGPA. Debate with the wall.",
+    "You live. You learn. You cry. You improve. Repeat."
+  ];
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
     const t = setTimeout(() => {
-      setIndex(i => (i + 1) % words.length);
-    }, 1700);
+      setIndex(i => (i + 1) % messages.length);
+    }, 2500);
     return () => clearTimeout(t);
-  }, [index, words.length]);
+  }, [index, messages.length]);
 
   return (
     <section 
@@ -30,19 +34,16 @@ function Subhero() {
       ></div>
       <div className={styles.content}>
         <h2 className={styles.heading}>
-          Unlock Your Potential with <br />
-          Hands-On Industry {" "}  
           <span 
             key={index} 
             className={styles.rotatingWord}
             style={{ color: theme.colors.primary }}
           >
-             {words[index]}
+             {messages[index]}
           </span>
         </h2>
         <p className={styles.subText}>
-          Gain hands-on experience in simulated corporate environments, 
-          work with real tools, and build a portfolio that employers value.
+          We just give the cheat codes.
         </p>
       </div>
     </section>

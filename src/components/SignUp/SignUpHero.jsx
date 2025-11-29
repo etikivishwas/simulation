@@ -52,14 +52,14 @@ export const SignUpHero = () => {
             WebkitTextFillColor: 'transparent',
           }}
         >
-          Ready to Transform Your Career?
+          Ready to Fix Your Career… or At Least Stop Ruining It?
         </h1>
         <p 
           className="my-6 max-w-xl text-center text-base leading-relaxed md:text-lg md:leading-relaxed"
           style={{ color: theme.colors.textSecondary }}
         >
-          Join thousands of pre-professionals who are already building their future
-          with real-world corporate experience.
+          Join thousands who stopped overthinking and started building their future. <br />
+          Your future won't change by staring at the ceiling at 3 AM.
         </p>
         <motion.button
           onClick={() => {
@@ -80,14 +80,14 @@ export const SignUpHero = () => {
           }}
           className="group relative flex w-fit items-center gap-1.5 rounded-full px-6 py-3 transition-colors"
         >
-          Get Started Now
+          Alright, Let's Fix My Life.
           <FiArrowRight className="transition-transform group-hover:-rotate-45 group-active:-rotate-12" />
         </motion.button>
         <p 
           className="mt-6 max-w-xl text-center text-sm leading-relaxed"
           style={{ color: theme.colors.textMuted }}
         >
-          By signing up, you agree to our Terms of Service and Privacy Policy
+          By signing up, you agree to stop self-sabotaging and accept our Terms & Conditions… and your future.
         </p>
       </div>
 

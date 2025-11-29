@@ -7,12 +7,48 @@ function Success({ onExploreMore }) {
   const [activeTab, setActiveTab] = useState("traditional");
 
   const skillGaps = [
-    { skill: "Real Project Experience", traditional: 20, corporate: 95 },
-    { skill: "Industry Tools", traditional: 30, corporate: 90 },
-    { skill: "Team Collaboration", traditional: 25, corporate: 85 },
-    { skill: "Code Reviews", traditional: 15, corporate: 92 },
-    { skill: "Production Deployment", traditional: 10, corporate: 88 },
-    { skill: "Client Communication", traditional: 35, corporate: 80 }
+    { 
+      skill: "Real Project Experience", 
+      traditional: 20, 
+      corporate: 95,
+      traditionalDesc: "Basically doing copy-paste tasks while the intern buddy disappears for 3 months.",
+      corporateDesc: "You actually BUILD stuff. Not photocopy someone else's."
+    },
+    { 
+      skill: "Industry Tools", 
+      traditional: 30, 
+      corporate: 90,
+      traditionalDesc: "You'll learn Excel. Badly. That's it.",
+      corporateDesc: "You use the same tools developers cry over in real companies."
+    },
+    { 
+      skill: "Team Collaboration", 
+      traditional: 25, 
+      corporate: 85,
+      traditionalDesc: "You and two other interns you met 7 minutes ago, pretending you're a 'team'.",
+      corporateDesc: "You'll fight, fix, brainstorm, panic, revive — exactly like real tech teams."
+    },
+    { 
+      skill: "Code Reviews", 
+      traditional: 15, 
+      corporate: 92,
+      traditionalDesc: "If your senior ever responds, consider it a festival.",
+      corporateDesc: "Your code WILL get roasted. But you'll come out stronger."
+    },
+    { 
+      skill: "Production Deployment", 
+      traditional: 10, 
+      corporate: 88,
+      traditionalDesc: "Deploy? Bro, you won't even TOUCH the repo.",
+      corporateDesc: "Yes, we let you deploy things that actually work. Wild, right?"
+    },
+    { 
+      skill: "Client Communication", 
+      traditional: 35, 
+      corporate: 80,
+      traditionalDesc: "Sending emails like 'Dear sir, please find the attachment' = personality development.",
+      corporateDesc: "You learn how to sound professional while internally screaming."
+    }
   ];
 
   return (
@@ -34,7 +70,7 @@ function Success({ onExploreMore }) {
             Interactive Skill Gap Assessment
           </h3>
           <p style={{ color: theme.colors.textSecondary }}>
-            Compare traditional internship outcomes vs. corporate simulation results
+            Compare traditional internship outcomes vs. Samardhya results
           </p>
         </div>
 
@@ -83,7 +119,7 @@ function Success({ onExploreMore }) {
               }
             }}
           >
-            Corporate Simulation
+            Samardhya
           </button>
         </div>
 
@@ -127,6 +163,12 @@ function Success({ onExploreMore }) {
                   }}
                 ></div>
               </div>
+              <p 
+                className={styles.skillDescription}
+                style={{ color: theme.colors.textMuted }}
+              >
+                {activeTab === "traditional" ? item.traditionalDesc : item.corporateDesc}
+              </p>
             </div>
           ))}
         </div>
@@ -139,7 +181,7 @@ function Success({ onExploreMore }) {
           }}
         >
           <p style={{ color: theme.colors.textSecondary }}>
-            Ready to bridge the gap with real corporate experience?
+            Ready to bridge the gap with real experience?
           </p>
           <button 
             className={styles.ctaBtn} 

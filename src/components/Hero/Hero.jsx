@@ -32,14 +32,15 @@ function Hero({ onContactClick, onLearnMoreClick }) {
           className={styles.heading}
           style={{ color: theme.colors.text }}
         >
-          Transform Your Career <br />with Real-World <br />Corporate Experience
+          You aren't "lost"; you're confused, just like everyone else.
         </h2>
         <p 
           className={styles.subText}
           style={{ color: theme.colors.textSecondary }}
         >
-          AI-driven internships &amp; capstone projects <br />
-          in simulated MNC environments.
+          Samardhya fixes your broken life-GPS. <br />
+          We reboot your brain, slap clarity into you, <br />
+          and send you back looking like you actually know things.
         </p>
 
         <div className={styles.buttonGroup}>
@@ -57,7 +58,7 @@ function Hero({ onContactClick, onLearnMoreClick }) {
               e.currentTarget.style.backgroundColor = theme.colors.primary;
             }}
           >
-            Learn More
+            Let's figure your life out.
           </button>
           <button 
             className={styles.btnOutline} 
@@ -75,7 +76,7 @@ function Hero({ onContactClick, onLearnMoreClick }) {
               e.currentTarget.style.borderColor = theme.colors.border;
             }}
           >
-            Contact us
+            Join the squad before your future sues you.
           </button>
         </div>
       </motion.div>

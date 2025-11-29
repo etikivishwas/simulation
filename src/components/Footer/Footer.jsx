@@ -25,14 +25,11 @@ const Footer = () => {
           className={styles.subtitle}
           style={{ color: theme.colors.textSecondary }}
         >
-          Have a website or brand that could use some <FaHeart style={{ color: theme.colors.error }} />
+          Samardhya —
+          Fixing confused students
+          using honesty, humor, and
+          a little bullying (for character development).
         </p>
-        <h2 
-          className={styles.title}
-          style={{ color: theme.colors.text }}
-        >
-          Give us a shout!
-        </h2>
 
         <div className={styles.contact}>
           <p 
@@ -98,7 +95,8 @@ const Footer = () => {
         className={styles.footerNote}
         style={{ color: theme.colors.textMuted }}
       >
-        © 2025 YBS Industries LLP. All rights reserved.
+        © 2025 Samardhya<br />
+        Built with caffeine, chaos, and actual humans who give a damn.
       </p>
     </footer>
   );
