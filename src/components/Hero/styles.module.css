@@ -1,164 +1,147 @@
+/* MAIN CONTAINER */
 .container {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  padding: 4rem 8%;
   display: flex;
-  height: 100vh;
-  flex-direction: column;
+  align-items: center;
+}
+
+/* LEFT + RIGHT LAYOUT */
+.contentWrapper {
+  display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 2rem 2rem;
-  gap: 2rem;
-  font-family: 'Poppins', sans-serif;
-  padding-top: 0;
-  padding-bottom: 3rem;
-  transition: background-color 0.3s ease;
+  width: 100%;
+  gap: 4rem;
+  position: relative;
+  z-index: 10;
 }
 
-@media (min-width: 768px) {
-  .container {
-    flex-direction: row;
-  }
-}
-
-@media (max-width: 768px) {
-  .container {
-    padding-top: 2rem;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-  }
-
-  .testSection {
-    width: 70%;
-  }
-}
-
+/* LEFT COLUMN */
 .textSection {
-  width: 50%;
-  
+  flex: 1;
+  max-width: 650px;
 }
 
-.heading {
-  font-size: 2.5rem;
-  font-weight: bold;
+/* RIGHT COLUMN */
+.imageSection {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.heroImage {
+  width: 480px;
+  height: auto;
+}
+
+/* BIG HERO TEXT */
+.heroMain {
+  font-size: 3.4rem;
+  font-weight: 800;
   line-height: 1.2;
-  font-family: 'Poppins', sans-serif;
-  word-break: keep-all;
-  padding-left: 20%;
-  transition: color 0.3s ease;
+  margin-bottom: 1rem;
 }
 
-.subText {
+/* Highlighted shake word */
+.shakeWord {
+  display: inline-block;
+  font-weight: 900;
+  color: #ff4a4a;
+}
+
+/* Paragraph */
+.subParagraph {
+  font-size: 1.2rem;
   margin-top: 1rem;
-  font-size: 1.3rem;
-  padding-left: 21%;
-  transition: color 0.3s ease;
+  max-width: 550px;
+  line-height: 1.6;
 }
 
+/* SECOND PARAGRAPH (FADE-IN) */
+.extraParagraph {
+  font-size: 1.15rem;
+  margin-top: 1rem;
+  opacity: 0;
+  line-height: 1.6;
+}
+
+/* BUTTON GROUP */
 .buttonGroup {
   margin-top: 2rem;
   display: flex;
   gap: 1rem;
-  justify-content: center;
-  align-items: center;
 }
 
-.btnPrimary {
-  border: none;
-  padding: 0.8rem 1.5rem;
-  border-radius: 8px;
+.btnPrimary,
+.btnOutline {
+  padding: 12px 28px;
+  border-radius: 10px;
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  transition: 0.3s;
 }
 
 .btnPrimary:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-}
-
-.btnPrimary:active {
-  transform: translateY(0);
+  transform: translateY(-3px);
 }
 
 .btnOutline {
-  background: transparent;
   border: 2px solid;
-  padding: 0.8rem 1.5rem;
-  border-radius: 8px;
-  font-size: 1rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.3s ease;
+  background: transparent;
 }
 
 .btnOutline:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: translateY(-3px);
+  background: rgba(255, 255, 255, 0.05);
 }
 
-.btnOutline:active {
-  transform: translateY(0);
+/* Background shapes */
+.bgShape1,
+.bgShape2 {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(60px);
+  z-index: 0;
 }
 
-.imageSection {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50%;
+.bgShape1 {
+  width: 300px;
+  height: 300px;
+  background: #7f7fff25;
+  top: 10%;
+  left: -8%;
 }
 
-@media (min-width: 768px) {
-  .imageSection {
-    margin-top: 0;
-    top: 0;
-  }
+.bgShape2 {
+  width: 260px;
+  height: 260px;
+  background: #ff7f7f25;
+  bottom: 10%;
+  right: -6%;
 }
 
-@media (max-width: 768px) {
-  .container {
-    padding: 1.5rem;          /* give breathing space */
+/* MOBILE RESPONSIVE */
+@media (max-width: 900px) {
+  .contentWrapper {
     flex-direction: column;
-    gap: 0;
-    text-align: center;       /* center text on mobile */
+    text-align: center;
+    gap: 3rem;
   }
 
-  .textSection {
-    width: 100%;              /* take full width */
-    padding: 0;               /* remove side padding */
-  }
-
-  .heading {
-    padding-left: 0;
-    font-size: 1.8rem;        /* smaller for mobile */
-    line-height: 1.4;
-  }
-
-  .subText {
-    padding-left: 0;
-    font-size: 1rem;          /* slightly smaller */
-    color: #444;
-  }
-
-  .buttonGroup {
+  .imageSection {
     justify-content: center;
   }
 
-  .imageSection {
-    width: 100%;
-    margin: 0;
-  }
-
   .heroImage {
-    width: 100%;              /* responsive image */
-    max-width: 350px;         /* not too large */
-    margin: 0 auto;
+    width: 340px;
   }
-}
 
-.heroImage {
-  width: 550px;
-  height: 100%;
-  max-width: 100%;
-  padding-bottom: 2rem;
+  .heroMain {
+    font-size: 2.4rem;
+  }
 }
