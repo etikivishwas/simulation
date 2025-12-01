@@ -11,7 +11,9 @@ import Course from './components/Course/Course';
 import Contact from './components/Contact/Contact';
 import Testimonials from './components/Testimonials/Testimonials';
 import Footer from './components/Footer/Footer';
+import FlowChart from './components/FlowChart/FlowChart';
 import MeetingForm from './components/MeetingForm/MeetingForm';
+import WhySamardhya from './components/WhySamardhya/WhySamardhya';
 import { SignUpHero } from './components/SignUp/SignUpHero';
 
 function App() {
@@ -36,17 +38,21 @@ function App() {
       <div className="App">
         <Navbar />
         <Hero onContactClick={scrollToContact} onLearnMoreClick={scrollToAbout} />
-        <Subhero />
-        <SignUpHero />
+        
+        
         <div ref={aboutRef}>
           <About />
         </div>
         <Fail />
         <Success onExploreMore={scrollToCourse} />
-        <div ref={courseRef}>
+        <WhySamardhya />
+        {/* <div ref={courseRef}>
           <Course />
-        </div>
-        <MeetingForm />
+        </div> */}
+        <FlowChart />
+        <Subhero />
+        <SignUpHero />
+        {/* <MeetingForm /> */}
         
         {/* <Testimonials /> */}
         <div ref={contactRef}>

@@ -1,0 +1,238 @@
+/* --- WRAPPER --- */
+.wrapper {
+  padding: 60px 20px;
+  max-width: 950px;
+  margin: auto;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+/* --- HEADING --- */
+.heading {
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(50px) scale(0.92);
+  transition: all 1s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.headingVisible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+.highlight {
+  color: #ff3e8e;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  opacity: 0.85;
+}
+
+/* --- CARD SECTION --- */
+.points {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.card {
+  position: relative;
+  background: rgba(255, 255, 255, 0.07);
+  padding: 28px;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  backdrop-filter: blur(14px);
+  transform: rotateX(25deg) scale(0.9);
+  opacity: 0;
+  transition: transform 0.9s cubic-bezier(0.23, 1.2, 0.32, 1),
+              opacity 0.9s ease;
+}
+
+.cardVisible {
+  transform: rotateX(0deg) scale(1);
+  opacity: 1;
+}
+
+/* 3D Hover Levitation */
+.card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 15px 45px rgba(255, 62, 142, 0.25);
+}
+
+/* Text */
+.card h2 {
+  margin-bottom: 10px;
+  font-size: 22px;
+  color: #ffb5df;
+}
+
+.card p {
+  font-size: 16px;
+  opacity: 0.9;
+  line-height: 1.5;
+}
+
+/* --- TRAIL EFFECT behind card --- */
+.trail {
+  position: absolute;
+  top: -40%;
+  left: -40%;
+  width: 180%;
+  height: 180%;
+  background: radial-gradient(circle, rgba(255, 0, 130, 0.1), transparent 70%);
+  filter: blur(60px);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+}
+
+.card:hover .trail {
+  opacity: 1;
+}
+
+/* --- ENDING LINE --- */
+.endLine {
+  margin-top: 70px;
+  font-size: 26px;
+  font-weight: 600;
+  text-align: center;
+  opacity: 0.92;
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 700px) {
+  .heading {
+    font-size: 32px;
+  }
+  .card h2 {
+    font-size: 20px;
+  }
+  .card {
+    padding: 22px;
+  }
+  .endLine {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 480px) {
+  .heading {
+    font-size: 28px;
+  }
+  .subtitle {
+    font-size: 16px;
+  }
+}
+
+/* ===========================
+   ENDLINE CINEMATIC BANNER
+=========================== */
+
+.endLineSection {
+  width: 100%;
+  min-height: 45vh;
+  margin-top: 60px;
+  padding: 60px 20px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-image: url("https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=2560&q=80");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+/* Overlay */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  backdrop-filter: blur(2px);
+}
+
+/* Main Neon Text */
+.endLine {
+  position: relative;
+  max-width: 900px;
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #ffffff;
+  z-index: 2;
+
+  text-shadow: 0 0 15px rgba(255, 62, 142, 0.8),
+               0 0 30px rgba(255, 62, 142, 0.4);
+
+  animation: neonPulse 4s infinite ease-in-out;
+  line-height: 1.4;
+}
+
+/* Typewriter Animation */
+.typewriter {
+  display: inline-block;
+  white-space: normal;
+  border-right: none;
+  overflow: visible;
+  width: auto;
+  animation: none;
+}
+
+@keyframes neonPulse {
+  0% {
+    text-shadow: 0 0 10px rgba(255, 62, 142, 0.6),
+                 0 0 20px rgba(255, 62, 142, 0.3);
+  }
+  50% {
+    text-shadow: 0 0 20px rgba(255, 62, 142, 1),
+                 0 0 40px rgba(255, 62, 142, 0.6);
+  }
+  100% {
+    text-shadow: 0 0 10px rgba(255, 62, 142, 0.6),
+                 0 0 20px rgba(255, 62, 142, 0.3);
+  }
+}
+
+/* ===========================
+   RESPONSIVE STYLING
+=========================== */
+
+@media (max-width: 1024px) {
+  .endLine {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .endLineSection {
+    min-height: 40vh;
+    padding: 50px 15px;
+  }
+
+  .endLine {
+    font-size: 1.7rem;
+  }
+
+  .typewriter {
+    white-space: normal;
+    border-right: none;
+    animation: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .endLine {
+    font-size: 1.4rem;
+    line-height: 1.3;
+  }
+}

@@ -25,7 +25,7 @@ const Footer = () => {
           className={styles.subtitle}
           style={{ color: theme.colors.textSecondary }}
         >
-          Have a website or brand that could use some <FaHeart style={{ color: theme.colors.error }} />
+          Built with caffeine, chaos, and actual humans who give a damn.
         </p>
         <h2 
           className={styles.title}

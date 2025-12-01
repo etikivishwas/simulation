@@ -19,24 +19,43 @@ function About() {
           className={styles.heading}
           style={{ color: theme.colors.text }}
         >
-          About the <span 
-            className={styles.highlight}
-            style={{ color: theme.colors.primary }}
-          >
-            program
-          </span>
+          Samardhya is simple
         </h2>
         <p 
-          className={styles.para1}
+          className={styles.para2}
           style={{ color: theme.colors.textSecondary }}
         >
-          Cutting-edge, AI-powered internship and capstone experience designed to mirror workflows at top MNC's like TCS, Accenture, AWS, Flipkart, and Infosys.
+          You show up with your broken life-GPS →
         </p>
         <p 
           className={styles.para2}
           style={{ color: theme.colors.textSecondary }}
         >
-          The program integrates real corporate tools, processes, and standards, ensuring participants gain hands-on experience that matches industry expectations.
+          We fix it,
+        </p>
+        <p 
+          className={styles.para2}
+          style={{ color: theme.colors.textSecondary }}
+        >
+          reboot your brain,
+        </p>
+        <p 
+          className={styles.para2}
+          style={{ color: theme.colors.textSecondary }}
+        >
+          slap clarity into you,
+        </p>
+        <p 
+          className={styles.para2}
+          style={{ color: theme.colors.textSecondary }}
+        >
+          and send you back into society
+        </p>
+        <p 
+          className={styles.para2}
+          style={{ color: theme.colors.textSecondary }}
+        >
+          looking like you actually know things.
         </p>
       </div>
       <div className={styles.animationSection}>

@@ -131,11 +131,10 @@ function Contact() {
 
           <input
             type="text"
-            placeholder="Resume Google Drive link (make it accessible to anyone)"
+            placeholder="Description"
             name="resume"
             value={formData.resume}
             onChange={handleChange}
-            required
             style={{
               backgroundColor: theme.colors.background,
               color: theme.colors.text,
