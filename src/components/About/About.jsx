@@ -49,13 +49,13 @@ function About() {
           className={styles.para2}
           style={{ color: theme.colors.textSecondary }}
         >
-          and send you back into society
+          and send you back into society.
         </p>
         <p 
           className={styles.para2}
           style={{ color: theme.colors.textSecondary }}
         >
-          looking like you actually know things.
+          Looking like you actually know things.
         </p>
       </div>
       <div className={styles.animationSection}>

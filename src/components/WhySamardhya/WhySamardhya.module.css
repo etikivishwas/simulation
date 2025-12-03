@@ -10,7 +10,7 @@
 /* --- HEADING --- */
 .heading {
   font-size: 40px;
-  font-weight: 700;
+  font-weight: 500;
   text-align: center;
   opacity: 0;
   transform: translateY(50px) scale(0.92);
@@ -23,7 +23,7 @@
 }
 
 .highlight {
-  color: #ff3e8e;
+  color: #8b5cf6;
 }
 
 .subtitle {
@@ -62,14 +62,17 @@
 /* 3D Hover Levitation */
 .card:hover {
   transform: translateY(-10px) scale(1.03);
-  box-shadow: 0 15px 45px rgba(255, 62, 142, 0.25);
+  box-shadow:
+    0 0 10px rgba(129, 140, 248, 0.7),
+    0 0 15px rgba(99, 102, 241, 0.5),
+    inset 0 0 8px rgba(255, 255, 255, 0.1);
 }
 
 /* Text */
 .card h2 {
   margin-bottom: 10px;
   font-size: 22px;
-  color: #ffb5df;
+  color: #ffff;
 }
 
 .card p {

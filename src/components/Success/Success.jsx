@@ -141,7 +141,7 @@ function Success({ onExploreMore }) {
           <p style={{ color: theme.colors.textSecondary }}>
             Ready to bridge the gap with real corporate experience?
           </p>
-          <button 
+          {/* <button 
             className={styles.ctaBtn} 
             onClick={onExploreMore}
             style={{
@@ -156,7 +156,7 @@ function Success({ onExploreMore }) {
             }}
           >
             Explore Programs →
-          </button>
+          </button> */}
         </div>
       </div>
     </div>

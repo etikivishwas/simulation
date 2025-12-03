@@ -3,8 +3,8 @@ import styles from "./styles.module.css";
 import { MotionDiv } from "../motionComponents/motionComponents";
 import ThemeToggle from "../ThemeToggle/ThemeToggle";
 import { useTheme } from "../../contexts/ThemeContext";
-import logoLight from "./logo1.png"; 
-import logoDark from "./logo.png"; 
+import logoLight from "./logo1.png";
+import logoDark from "./logo.png";
 
 function Navbar() {
   const { theme, isDark } = useTheme();
@@ -27,12 +27,14 @@ function Navbar() {
 
         {/* --- Right side controls --- */}
         <div className={styles.controls}>
-          <button 
+          <button
             className={styles.getStartedButton}
             onClick={handleGetStarted}
+            style={{ color: isDark ? "#fff" : "#000" }}
           >
             Get Started
           </button>
+
 
           <ThemeToggle />
         </div>

@@ -71,6 +71,7 @@
     font-size: 1.5rem;
     font-weight: 600;
     transition: color 0.3s ease;
+    text-align: center;
 }
 
 .para4 {
@@ -113,5 +114,9 @@
 
     .para2 {
         margin: 0.5rem;
+    }
+    .para3 {
+        text-align: center;
+        width: 100%;
     }
 }
