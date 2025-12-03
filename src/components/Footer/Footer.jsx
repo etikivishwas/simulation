@@ -61,7 +61,7 @@ const Footer = () => {
           {/* Icons */}
           <div className={styles.icons}>
             <a
-              href="https://www.linkedin.com/in/ybs-industries?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+              href="https://www.linkedin.com/company/samardhya/"
               target="_blank"
               rel="noopener noreferrer"
               className={styles.icon}
@@ -76,7 +76,7 @@ const Footer = () => {
               <FaLinkedin size={24} />
             </a>
             <a
-              href="https://instagram.com"
+              href="https://www.instagram.com/ybs_samardhya?igsh=YzN2ankxaXJzajQ1"
               target="_blank"
               rel="noopener noreferrer"
               className={styles.icon}
