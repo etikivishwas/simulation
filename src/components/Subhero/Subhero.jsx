@@ -1,19 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import styles from './styles.module.css';
-import bgImage from './pic1.png'; // replace with your image path
+import bgImage from './pic1.png';
 import { useTheme } from '../../contexts/ThemeContext';
 
 function Subhero() {
   const { theme } = useTheme();
-  const words = ['Training', 'Knowledge', 'Expertise'];
-  const [index, setIndex] = useState(0);
-
-  useEffect(() => {
-    const t = setTimeout(() => {
-      setIndex(i => (i + 1) % words.length);
-    }, 1700);
-    return () => clearTimeout(t);
-  }, [index, words.length]);
 
   return (
     <section 
@@ -28,22 +19,27 @@ function Subhero() {
             : 'rgba(0, 0, 0, 0.5)'
         }}
       ></div>
+
       <div className={styles.content}>
         <h2 className={styles.heading}>
-          Unlock Your Potential with <br />
-          Hands-On Industry {" "}  
-          <span 
-            key={index} 
-            className={styles.rotatingWord}
-            style={{ color: theme.colors.primary }}
-          >
-             {words[index]}
-          </span>
+          Confused? Good. We can work with that. <br />
+          Skills &gt; CGPA. Debate with the wall. <br />
         </h2>
+
         <p className={styles.subText}>
-          Gain hands-on experience in simulated corporate environments, 
-          work with real tools, and build a portfolio that employers value.
-        </p>
+  You{" "}
+  <span style={{ color: theme.colors.primary }}>live</span>.{" "}
+  You{" "}
+  <span style={{ color: theme.colors.primary }}>learn</span>.{" "}
+  You{" "}
+  <span style={{ color: theme.colors.primary }}>cry</span>.{" "}
+  You{" "}
+  <span style={{ color: theme.colors.primary }}>improve</span>.{" "}
+  Repeat.
+  <br />
+  We just give the cheat codes.
+</p>
+
       </div>
     </section>
   );

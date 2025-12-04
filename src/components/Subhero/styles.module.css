@@ -27,14 +27,14 @@ body {
 .content {
   position: relative;
   z-index: 2;
-  max-width: 800px;
+  max-width: 950px;
   padding: 2rem;
   padding-top: 15%;
   color: white;
 }
 
 .heading {
-  font-size: 2.8rem;
+  font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 1rem;
   animation: riseIn 0.6s ease both;
@@ -62,8 +62,9 @@ body {
 
 @media (max-width: 768px) {
   .heading {
-    line-height: 95%;
+    line-height: 120%;
     padding-left: 0;
+    font-size: 2rem;
   }
   .content{
     padding-left: 0;
