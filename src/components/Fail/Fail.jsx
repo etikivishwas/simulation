@@ -25,20 +25,20 @@ function Fail() {
             className={styles.highlight}
             style={{ color: theme.colors.primary }}
           >
-            Fail Students
+            Don't Hit Anymore
           </span>
         </h2>
         <p 
           className={styles.para1}
           style={{ color: theme.colors.textSecondary }}
         >
-          The gap between academic learning and industry requirements is wider than ever.
+          Colleges teach theory. Companies want skills. <b>And students get stuck in the crossfire.</b>
         </p>
         <p 
           className={styles.para2}
           style={{ color: theme.colors.textSecondary }}
         >
-          Here's what students actually face in the job market.
+          Here’s what’s actually happening out there.
         </p>
       </div>
       <div className={styles.items}>
@@ -58,13 +58,13 @@ function Fail() {
               className={styles.para3}
               style={{ color: theme.colors.text }}
             >
-              Theoretical Learning Gap
+              All Theory, No Skill
             </p>
             <p 
               className={styles.para4}
               style={{ color: theme.colors.textSecondary }}
             >
-              Traditional education focuses on concepts without real-world application, leaving students unprepared for corporate environments.
+              You study for years… only to freeze when someone says ‘build this’. College teaches concepts. Not how to actually DO anything.
             </p>
         </div>
         <div 
@@ -83,13 +83,13 @@ function Fail() {
               className={styles.para3}
               style={{ color: theme.colors.text }}
             >
-              Limited Industry Exposure
+              Zero Real-World Vibes
             </p>
             <p 
               className={styles.para4}
               style={{ color: theme.colors.textSecondary }}
             >
-              Most internships offer coffee-fetching roles instead of meaningful project experience that builds actual skills to the students.
+              Most internships = ‘Make PPTs, take prints, attend meetings’. No real projects, no real skills, no real growth.
             </p>
         </div>
         <div 
@@ -108,13 +108,15 @@ function Fail() {
               className={styles.para3}
               style={{ color: theme.colors.text }}
             >
-              Portfolio & Resume Weakness
+              Portfolios That Don’t Impress Anyone
             </p>
             <p 
               className={styles.para4}
               style={{ color: theme.colors.textSecondary }}
             >
-              Academic projects don't showcase industry-standard practices and their expertise, making it hard to stand out to recruiters.
+              Recruiter: ‘Show me what you built.’
+Student: ‘Umm… a mini-project from 3rd semester?’ <br />
+Yeah… that doesn’t cut it anymore.
             </p>
         </div>
         <div 
@@ -133,13 +135,15 @@ function Fail() {
               className={styles.para3}
               style={{ color: theme.colors.text }}
             >
-              Low Placement Success
+              Placements Be Like: Better Luck Next Year
             </p>
             <p 
               className={styles.para4}
               style={{ color: theme.colors.textSecondary }}
             >
-              Traditional education focuses on concepts without real-world application, leaving students unprepared for corporate environments.
+              Companies want skills, colleges give marks.
+So placements?
+Mostly vibes… and a lot of rejection emails.
             </p>
         </div>
       </div>
