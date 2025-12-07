@@ -16,7 +16,7 @@
 }
 
 .heading {
-    font-size: 3rem;
+    font-size: 4rem;
     margin: 0.5rem;
     transition: color 0.3s ease;
 }
@@ -77,4 +77,23 @@
         padding: 0 1rem;
     }
 }
+
+.floatWord {
+  display: inline-block;
+  animation: floatDrop 1.2s ease-in-out infinite;
+}
+
+@keyframes floatDrop {
+  0% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-15px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 

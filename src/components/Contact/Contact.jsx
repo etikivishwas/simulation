@@ -84,7 +84,7 @@ function Contact() {
           className={styles.heading}
           style={{ color: theme.colors.text }}
         >
-          Contact Us For Candidate Selection Process
+          Contact Us For Queries
         </h2>
         <form onSubmit={handleSubmit}>
           <input

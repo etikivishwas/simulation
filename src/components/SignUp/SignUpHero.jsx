@@ -45,21 +45,21 @@ export const SignUpHero = () => {
     >
       <div className="relative z-10 flex flex-col items-center">
         <h1 
-          className="max-w-3xl bg-gradient-to-br bg-clip-text text-center text-3xl font-medium leading-tight text-transparent sm:text-5xl sm:leading-tight md:text-7xl md:leading-tight"
+          className="max-w-3xl bg-gradient-to-br bg-clip-text text-center text-2xl font-medium leading-tight text-transparent sm:text-5xl sm:leading-tight md:text-7xl md:leading-tight"
           style={{
             backgroundImage: `linear-gradient(to bottom right, ${theme.colors.text}, ${theme.colors.textMuted})`,
             WebkitBackgroundClip: 'text',
             WebkitTextFillColor: 'transparent',
           }}
         >
-          Ready to Transform Your Career?
+          Ready to Fix Your Career.... or At Least Stop Running It?
         </h1>
         <p 
           className="my-6 max-w-xl text-center text-base leading-relaxed md:text-lg md:leading-relaxed"
           style={{ color: theme.colors.textSecondary }}
         >
-          Join thousands of pre-professionals who are already building their future
-          with real-world corporate experience.
+          Join thousands of other confused pre-professionals who finally stoped overthinking 
+          and started <i><b>actually doing something</b></i> with their life.
         </p>
         <motion.button
           onClick={() => {

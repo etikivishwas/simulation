@@ -130,6 +130,9 @@
   .flowContent li {
     font-size: 0.95rem;
   }
+  .flowSection {
+    padding-top: 10px;
+  }
 }
 
 /* Extra-small screens */

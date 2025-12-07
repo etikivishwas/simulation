@@ -19,13 +19,13 @@ function About() {
           className={styles.heading}
           style={{ color: theme.colors.text }}
         >
-          Samardhya is simple
+          <span className={styles.floatWord}>Samardhya</span> is simple
         </h2>
         <p 
           className={styles.para2}
           style={{ color: theme.colors.textSecondary }}
         >
-          You show up with your broken life-GPS →
+          You show up with your broken life-GPS
         </p>
         <p 
           className={styles.para2}

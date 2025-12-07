@@ -76,7 +76,7 @@ const WhySamardhya = () => {
                     className={styles.highlight}
                     style={{ color: isDark ? "#8b5cf6" : "#6b21a8" }}
                 >
-                    The Brutally Honest, Unfiltered, Chaos Edition
+                    Being Brutally Honest and Unfiltered
                 </span>
             </h1>
 
