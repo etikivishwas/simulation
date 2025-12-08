@@ -38,13 +38,11 @@ function App() {
       <div className="App">
         <Navbar />
         <Hero onContactClick={scrollToContact} onLearnMoreClick={scrollToAbout} />
-        
-        
+        <Fail />
+        <Success onExploreMore={scrollToCourse} />
         <div ref={aboutRef}>
           <About />
         </div>
-        <Fail />
-        <Success onExploreMore={scrollToCourse} />
         <WhySamardhya />
         {/* <div ref={courseRef}>
           <Course />
