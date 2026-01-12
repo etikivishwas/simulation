@@ -47,7 +47,7 @@ const Footer = () => {
             className={styles.email}
             style={{ color: theme.colors.textSecondary }}
           >
-            Send an email to: <strong style={{ color: theme.colors.primary }}>ybsindustriesllp@gmail.com</strong>
+            Send an email to: <strong style={{ color: theme.colors.primary }}>support@samardhya.com</strong>
           </p>
 
           {/* Phone */}
@@ -55,7 +55,7 @@ const Footer = () => {
             className={styles.phone}
             style={{ color: theme.colors.textSecondary }}
           >
-            <FaPhoneAlt size={18} style={{ color: theme.colors.primary }} /> <span>8500151146</span>
+            <FaPhoneAlt size={18} style={{ color: theme.colors.primary }} /> <span>7794034141</span>
           </p>
 
           {/* Icons */}
