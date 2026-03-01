@@ -34,7 +34,7 @@ function Contact() {
 
     try {
       const scriptURL =
-        "https://script.google.com/macros/s/AKfycbyyZjT4JUZdx62jASYsTsHTqvwnMPviZbpR7OAZddHsqMTmXWISgBQYATcDrxMLNqDi/exec";
+        "https://script.google.com/macros/s/AKfycbyNylGlNa2es7UcyLxzAzkkmHVqZK3xWOU5LsHUUufhc2NCxPBMefp8F74Aj9hPbXD8XA/exec";
 
       const formBody = new URLSearchParams();
       Object.keys(formData).forEach((key) => {
@@ -45,6 +45,8 @@ function Contact() {
         method: "POST",
         body: formBody,
       });
+
+
 
       // ✅ Even if the fetch can't read the response (CORS issue),
       // we assume success since data reaches the sheet.
@@ -73,14 +75,14 @@ function Contact() {
       </motion.div>
 
       {/* Right Form Section */}
-      <motion.div 
-        variants={popup} 
+      <motion.div
+        variants={popup}
         className={styles.form}
         style={{
           backgroundColor: theme.colors.backgroundSecondary,
         }}
       >
-        <h2 
+        <h2
           className={styles.heading}
           style={{ color: theme.colors.text }}
         >
@@ -132,8 +134,8 @@ function Contact() {
           <input
             type="text"
             placeholder="Description"
-            name="resume"
-            value={formData.resume}
+            name="description"
+            value={formData.description}
             onChange={handleChange}
             style={{
               backgroundColor: theme.colors.background,
@@ -142,8 +144,8 @@ function Contact() {
             }}
           />
 
-          <input 
-            type="submit" 
+          <input
+            type="submit"
             value="Send"
             style={{
               backgroundColor: theme.colors.primary,
@@ -159,10 +161,10 @@ function Contact() {
         </form>
 
         {responseMessage && (
-          <p 
-            style={{ 
-              color: theme.colors.text, 
-              marginTop: "1rem" 
+          <p
+            style={{
+              color: theme.colors.text,
+              marginTop: "1rem"
             }}
           >
             {responseMessage}
